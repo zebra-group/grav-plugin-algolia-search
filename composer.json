@@ -1,0 +1,30 @@
+{
+  "name": "erik-konrad/algolia-search",
+  "type": "grav-plugin",
+  "description": "Search plugin for Algolia",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/erik-konrad/grav-plugin-algolia-search",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Erik Konrad",
+      "email": "erik.konrad@zebra.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "algolia/algoliasearch-client-php": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\AlgoliaSearch\\": "classes/"
+    },
+    "classmap":  ["algolia-search.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

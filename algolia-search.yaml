@@ -1,0 +1,6 @@
+enabled: true
+searchRoute: "/search"
+algolia:
+  applicationID: "your-application-id"
+  adminKey: "your-admin-key"
+  indexName: "your-index-name"
