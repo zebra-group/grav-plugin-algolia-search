@@ -63,7 +63,7 @@ class AlgoliaSearchPlugin extends Plugin
      */
     public function onPageInitialized() {
 
-        if(($this->grav['uri']->route() === $this->config()['searchRoute']) && $this->grav['uri']->query('s')) {
+        if(($this->grav['page']->route() === $this->config()['searchRoute']) && $this->grav['uri']->query('s')) {
             $this->runSearch($this->grav['uri']->query('s'));
         }
 
