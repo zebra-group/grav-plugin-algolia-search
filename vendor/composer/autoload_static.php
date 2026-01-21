@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita0475701d1009129fd1984b800c3b6af
+class ComposerStaticInitab23f16fb8e76ffeacdc6bbd1e52ef43
 {
     public static $files = array (
         '979dffec6fa5205cabd2c2cd1e9e6b3a' => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src/Http/Psr7/functions.php',
@@ -52,15 +52,16 @@ class ComposerStaticInita0475701d1009129fd1984b800c3b6af
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Grav\\Plugin\\AlgoliaSearchPlugin' => __DIR__ . '/../..' . '/algolia-search.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita0475701d1009129fd1984b800c3b6af::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita0475701d1009129fd1984b800c3b6af::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita0475701d1009129fd1984b800c3b6af::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitab23f16fb8e76ffeacdc6bbd1e52ef43::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitab23f16fb8e76ffeacdc6bbd1e52ef43::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitab23f16fb8e76ffeacdc6bbd1e52ef43::$classMap;
 
         }, null, ClassLoader::class);
     }
